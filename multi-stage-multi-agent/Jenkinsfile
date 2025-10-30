@@ -9,9 +9,6 @@ pipeline {
       steps {
         // sh 'mvn --version'
         mvnVersion()
-      }
-      steps {
-        // sh 'mvn --version'
         helloWorld()
       }
     }
