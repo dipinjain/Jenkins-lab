@@ -8,11 +8,11 @@ pipeline {
       }
       steps {
         // sh 'mvn --version'
-        mvnVersion.groovy
+        mvnVersion()
       }
       steps {
         // sh 'mvn --version'
-        helloWorld.groovy
+        helloWorld()
       }
     }
     stage('Front-end') {
