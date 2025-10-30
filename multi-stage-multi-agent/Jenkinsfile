@@ -1,3 +1,4 @@
+@Library("my-shared-lib") _
 pipeline {
   agent none
   stages {
@@ -6,7 +7,8 @@ pipeline {
         docker { image 'maven:3.8.1-adoptopenjdk-11' }
       }
       steps {
-        sh 'mvn --version'
+        // sh 'mvn --version'
+        mvnVersion.groovy
       }
     }
     stage('Front-end') {
