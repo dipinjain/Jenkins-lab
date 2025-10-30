@@ -10,6 +10,10 @@ pipeline {
         // sh 'mvn --version'
         mvnVersion.groovy
       }
+      steps {
+        // sh 'mvn --version'
+        helloWorld.groovy
+      }
     }
     stage('Front-end') {
       agent {
